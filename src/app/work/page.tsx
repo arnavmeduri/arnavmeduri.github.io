@@ -5,7 +5,7 @@ const experiences = [
     location: "Raleigh, NC",
     period: "2025 — Present",
     description:
-      "Working on CI/CD infrastructure and tooling for OpenShift on the Technical Release Team (TRT) in the SHIP group.",
+      "Technical Release Team (TRT) in the SHIP group, working on CI/CD infrastructure and release engineering for OpenShift.",
   },
   {
     role: "Software Engineer Intern",
@@ -36,8 +36,7 @@ const experiences = [
     company: "Columbia University Irving Medical Center",
     location: "New York, NY (Remote)",
     period: "Jun 2023 — Apr 2025",
-    description:
-      "Developed deep learning models for retinal tear screening at the AI for Vision Science Lab at Columbia University.",
+    description: null,
   },
 ];
 
@@ -93,7 +92,22 @@ export default function Work() {
             </div>
             <p className="text-xs text-muted mt-1">{exp.location}</p>
             <p className="text-sm text-muted mt-2 leading-relaxed">
-              {exp.description ?? "Developed deep learning models for retinal tear screening at the AI for Vision Science Lab at Columbia University."}
+              {exp.description ?? (
+                <>
+                  Developed deep learning models for retinal tear screening at
+                  the AI for Vision Science Lab at Columbia University.
+                  Recognized as a{" "}
+                  <a
+                    href="https://www.societyforscience.org/regeneron-sts/2024-scholars/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-accent hover:text-foreground transition-colors underline underline-offset-4 decoration-accent/40"
+                  >
+                    Regeneron Science Talent Search Scholar
+                  </a>
+                  {" "}for this work.
+                </>
+              )}
             </p>
           </div>
         ))}
