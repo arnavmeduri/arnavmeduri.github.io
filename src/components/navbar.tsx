@@ -66,7 +66,7 @@ export function Navbar() {
               <FiLinkedin size={15} />
             </a>
             <a
-              href="mailto:arnav.meduri@duke.edu"
+              href="mailto:ameduri2024@gmail.com"
               className="p-1 text-muted hover:text-accent transition-colors"
               aria-label="Email"
             >
