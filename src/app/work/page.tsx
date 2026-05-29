@@ -3,7 +3,7 @@ const experiences = [
     role: "Software Engineer Intern",
     company: "Red Hat",
     location: "Raleigh, NC",
-    period: "2025 — Present",
+    period: "May 2026 — Present",
     description:
       "Working on CI/CD infrastructure and release engineering for OpenShift on the Technical Release Team (TRT) in the SHIP group.",
   },
