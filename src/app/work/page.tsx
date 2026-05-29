@@ -77,8 +77,7 @@ const skills = {
 export default function Work() {
   return (
     <div className="max-w-3xl mx-auto px-6 pt-28 pb-20">
-      <h1 className="text-2xl font-semibold tracking-tight mb-2">Work</h1>
-      <div className="mb-10" />
+      <h1 className="text-2xl font-semibold tracking-tight mb-10">Work</h1>
 
       <div className="space-y-8">
         {experiences.map((exp, i) => (
