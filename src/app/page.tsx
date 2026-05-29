@@ -22,7 +22,7 @@ export default function Home() {
 
         <p className="text-base text-muted leading-relaxed max-w-lg mb-4">
           I&apos;m a student at Duke University studying Computer Science and
-          Statistics, with experience in full stack development, machine
+          Statistics, with experience in full stack development and machine
           learning at research labs and startups.
         </p>
 
