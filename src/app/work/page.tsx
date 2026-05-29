@@ -126,7 +126,7 @@ export default function Work() {
                 {items.map((skill) => (
                   <span
                     key={skill}
-                    className="text-xs px-2.5 py-1 rounded-full bg-accent/10 text-accent border border-accent/20 hover:border-accent hover:bg-accent/20 transition-colors cursor-default"
+                    className="text-xs px-2.5 py-1 rounded-full bg-border/50 text-muted border border-transparent hover:border-accent hover:text-accent transition-colors cursor-default"
                   >
                     {skill}
                   </span>
