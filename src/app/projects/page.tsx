@@ -1,3 +1,5 @@
+import { PageTransition, FadeIn } from "@/components/motion";
+
 const projects = [
   {
     name: "PVO Segmentation",
@@ -39,65 +41,69 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="max-w-3xl mx-auto px-6 pt-28 pb-20">
-      <h1 className="text-2xl font-semibold tracking-tight mb-10">Projects</h1>
+    <PageTransition>
+      <div className="max-w-3xl mx-auto px-6 pt-28 pb-20">
+        <h1 className="text-2xl font-semibold tracking-tight mb-10">Projects</h1>
 
-      <div className="space-y-8">
-        {projects.map((project, i) => (
-          <div key={i} className="group pl-4 border-l-2 border-transparent hover:border-accent transition-colors">
-            <div className="flex items-center gap-2">
-              {project.link !== "#" ? (
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 font-medium text-foreground group-hover:text-accent transition-colors"
-                >
-                  {project.name}
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="shrink-0"
-                  >
-                    <path d="M7 17L17 7M17 7H7M17 7V17" />
-                  </svg>
-                </a>
-              ) : (
-                <h3 className="font-medium text-foreground">{project.name}</h3>
-              )}
-            </div>
-            <p className="text-sm text-muted mt-2 leading-relaxed">
-              {project.description}
-            </p>
-            <div className="flex flex-wrap items-center gap-2 mt-3">
-              {project.tech.map((t) => (
-                <span
-                  key={t}
-                  className="text-xs px-2 py-0.5 rounded-full bg-border/50 text-muted"
-                >
-                  {t}
-                </span>
-              ))}
-              {"publication" in project && project.publication && (
-                <a
-                  href={project.publication as string}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xs text-accent hover:text-foreground transition-colors underline underline-offset-2"
-                >
-                  Publication
-                </a>
-              )}
-            </div>
-          </div>
-        ))}
+        <div className="space-y-8">
+          {projects.map((project, i) => (
+            <FadeIn key={i} delay={i * 0.08}>
+              <div className="group pl-4 border-l-2 border-transparent hover:border-accent transition-colors">
+                <div className="flex items-center gap-2">
+                  {project.link !== "#" ? (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 font-medium text-foreground group-hover:text-accent transition-colors"
+                    >
+                      {project.name}
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="shrink-0"
+                      >
+                        <path d="M7 17L17 7M17 7H7M17 7V17" />
+                      </svg>
+                    </a>
+                  ) : (
+                    <h3 className="font-medium text-foreground">{project.name}</h3>
+                  )}
+                </div>
+                <p className="text-sm text-muted mt-2 leading-relaxed">
+                  {project.description}
+                </p>
+                <div className="flex flex-wrap items-center gap-2 mt-3">
+                  {project.tech.map((t) => (
+                    <span
+                      key={t}
+                      className="text-xs px-2 py-0.5 rounded-full bg-border/50 text-muted"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                  {"publication" in project && project.publication && (
+                    <a
+                      href={project.publication as string}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-accent hover:text-foreground transition-colors underline underline-offset-2"
+                    >
+                      Publication
+                    </a>
+                  )}
+                </div>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
       </div>
-    </div>
+    </PageTransition>
   );
 }
