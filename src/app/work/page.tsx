@@ -44,26 +44,23 @@ const experiences = [
 
 const skills = {
   Languages: [
-    "Java",
     "Python",
-    "C",
-    "JavaScript",
-    "TypeScript",
-    "HTML/CSS",
-    "SQL",
+    "Go",
+    "JavaScript/TypeScript",
+    "Java",
+    "C/C++",
+    "SQL (PostgreSQL, MySQL)",
     "R",
-    "MATLAB",
+    "Assembly",
   ],
-  "Frameworks & Tools": [
-    "React",
-    "Next.js",
+  "Frameworks/Technologies": [
+    "React/Next.js",
     "Node.js",
     "Angular",
-    "MongoDB",
     "PyTorch",
-    "NumPy",
-    "Pandas",
     "AWS",
+    "Docker/Podman",
+    "Kubernetes",
     "Linux",
   ],
   Skills: [
@@ -72,7 +69,7 @@ const skills = {
     "AI/ML",
     "Full Stack Development",
     "Unit Testing",
-    "Git",
+    "Agile/Scrum",
   ],
 };
 
