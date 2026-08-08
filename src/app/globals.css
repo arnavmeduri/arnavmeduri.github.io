@@ -30,10 +30,6 @@
   --color-nav-bg: var(--nav-bg);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
