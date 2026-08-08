@@ -1,18 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useTheme } from "./theme-provider";
-import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
-
-const links = [
-  { href: "/", label: "Home" },
-  { href: "/work", label: "Work" },
-  { href: "/projects", label: "Projects" },
-];
 
 export function Navbar() {
-  const pathname = usePathname();
   const { theme, toggleTheme } = useTheme();
 
   return (
@@ -26,53 +17,14 @@ export function Navbar() {
         </Link>
 
         <div className="flex items-center gap-1">
-          {links.map((link) => {
-            const isActive =
-              link.href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(link.href);
-            return (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`text-sm px-3 py-1.5 rounded-md transition-colors ${
-                  isActive
-                    ? "text-accent"
-                    : "text-muted hover:text-foreground"
-                }`}
-              >
-                {link.label}
-              </Link>
-            );
-          })}
+          <a
+            href="#projects"
+            className="text-sm px-3 py-1.5 rounded-md text-muted hover:text-foreground transition-colors"
+          >
+            Projects
+          </a>
 
-          <div className="flex items-center gap-2 ml-3 pl-3 border-l border-border">
-            <a
-              href="https://github.com/arnavmeduri"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-1 text-muted hover:text-accent transition-colors"
-              aria-label="GitHub"
-            >
-              <FiGithub size={15} />
-            </a>
-            <a
-              href="https://linkedin.com/in/arnavmeduri"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-1 text-muted hover:text-accent transition-colors"
-              aria-label="LinkedIn"
-            >
-              <FiLinkedin size={15} />
-            </a>
-            <a
-              href="mailto:ameduri2024@gmail.com"
-              className="p-1 text-muted hover:text-accent transition-colors"
-              aria-label="Email"
-            >
-              <FiMail size={15} />
-            </a>
-
+          <div className="ml-2 pl-2 border-l border-border">
             <button
               onClick={toggleTheme}
               className="p-1 text-muted hover:text-foreground transition-colors"

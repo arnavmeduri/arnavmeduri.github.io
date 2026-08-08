@@ -30,10 +30,14 @@
   --color-nav-bg: var(--nav-bg);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
   transition: background-color 0.2s, color 0.2s;
 }
 
