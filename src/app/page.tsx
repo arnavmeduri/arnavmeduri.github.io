@@ -6,7 +6,7 @@ import { PageTransition, FadeIn } from "@/components/motion";
 export default function Home() {
   return (
     <PageTransition>
-      <div className="max-w-3xl mx-auto px-6 pt-28 pb-20">
+      <div className="max-w-3xl mx-auto px-6 pt-28 pb-10">
         <div className="flex flex-col items-center text-center">
           <FadeIn>
             <div className="w-[96px] h-[96px] rounded-full overflow-hidden mb-5">

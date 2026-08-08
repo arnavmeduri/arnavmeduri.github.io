@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   description: "Personal website of Arnav Meduri",
 };
 
+const buildDate = new Date().toLocaleDateString("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -34,7 +40,7 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <footer className="max-w-3xl mx-auto px-6 py-6 flex items-center justify-between text-xs text-muted border-t border-border w-full">
             <span>&copy; 2026 Arnav Meduri</span>
-            <span>last updated May 27, 2026</span>
+            <span>last updated {buildDate}</span>
           </footer>
         </ThemeProvider>
       </body>
