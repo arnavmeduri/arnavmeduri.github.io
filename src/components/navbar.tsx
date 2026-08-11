@@ -14,7 +14,7 @@ export function Navbar() {
       <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between border-b border-border bg-nav-bg backdrop-blur-md">
         <Link
           href="/"
-          className="text-sm font-semibold tracking-tight text-foreground hover:text-accent transition-colors font-[family-name:var(--font-geist-mono)]"
+          className="text-sm font-semibold tracking-tight text-foreground hover:text-accent transition-colors"
         >
           arnav meduri
         </Link>
