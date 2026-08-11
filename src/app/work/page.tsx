@@ -7,7 +7,7 @@ const experiences = [
     location: "Raleigh, NC",
     period: "May 2026 — Present",
     description:
-      "Working on CI/CD infrastructure and release engineering for OpenShift on the Technical Release Team (TRT) in the SHIP group.",
+      "Working on CI/CD and release engineering infrastructure, as well as platform observability for OpenShift.",
   },
   {
     role: "Software Engineer Intern",
