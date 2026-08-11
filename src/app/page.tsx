@@ -27,8 +27,16 @@ export default function Home() {
           <FadeIn delay={0.1}>
             <p className="text-base text-muted leading-relaxed max-w-lg mb-4">
               I&apos;m a Computer Science and Statistics student at Duke
-              University. Currently, I&apos;m a Software Engineer Intern at
-              Red Hat, working on CI/CD and release engineering infrastructure
+              University. Currently, I&apos;m a Software Engineer Intern at{" "}
+              <a
+                href="https://www.redhat.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent hover:text-foreground transition-colors underline underline-offset-4 decoration-accent/40"
+              >
+                Red Hat
+              </a>
+              , working on CI/CD and release engineering infrastructure
               for OpenShift. Feel free to reach out if you&apos;d like to
               chat!
             </p>
