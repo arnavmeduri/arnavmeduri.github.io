@@ -14,8 +14,11 @@ export function Navbar() {
       <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between border-b border-border bg-nav-bg backdrop-blur-md">
         <Link
           href="/"
-          className="text-sm font-semibold tracking-tight text-foreground hover:text-accent transition-colors"
+          className="flex items-center gap-2 text-sm font-semibold tracking-tight text-foreground hover:text-accent transition-colors"
         >
+          <span className="w-6 h-6 rounded-full bg-accent text-white text-[10px] font-bold flex items-center justify-center shrink-0">
+            AM
+          </span>
           arnav meduri
         </Link>
 
