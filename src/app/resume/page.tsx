@@ -31,16 +31,10 @@ export default function Resume() {
 
   return (
     <PageTransition>
-      <div className="max-w-3xl mx-auto px-6 pt-28 pb-20">
-        <h1 className="text-2xl font-semibold tracking-tight mb-10">Resume</h1>
-
+      <div className="max-w-3xl mx-auto px-6 pt-28 pb-20 flex items-center justify-center min-h-[60vh]">
         {!unlocked ? (
           <FadeIn>
-            <form onSubmit={handleSubmit} className="max-w-sm">
-              <p className="text-sm text-muted mb-4">
-                This page is password protected. Enter the password to view my
-                resume.
-              </p>
+            <form onSubmit={handleSubmit} className="flex flex-col items-center gap-3">
               <div className="flex gap-2">
                 <input
                   type="password"
@@ -50,7 +44,7 @@ export default function Resume() {
                     setError(false);
                   }}
                   placeholder="Password"
-                  className="flex-1 px-3 py-2 text-sm rounded-md border border-border bg-background text-foreground placeholder:text-muted/60 focus:outline-none focus:border-accent transition-colors"
+                  className="px-3 py-2 text-sm rounded-md border border-border bg-background text-foreground placeholder:text-muted/60 focus:outline-none focus:border-accent transition-colors w-48"
                   autoFocus
                 />
                 <button
@@ -61,17 +55,12 @@ export default function Resume() {
                 </button>
               </div>
               {error && (
-                <p className="text-sm text-red-500 mt-2">
-                  Incorrect password.
-                </p>
+                <p className="text-sm text-red-500">Incorrect password.</p>
               )}
             </form>
           </FadeIn>
         ) : (
           <FadeIn>
-            <p className="text-sm text-muted mb-4">
-              Click below to view my resume.
-            </p>
             <a
               href={RESUME_URL}
               target="_blank"
