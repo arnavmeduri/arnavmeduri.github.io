@@ -27,7 +27,7 @@ export default function Home() {
           <FadeIn delay={0.1}>
             <p className="text-base text-muted leading-relaxed max-w-lg mb-4">
               I&apos;m a Computer Science and Statistics student at Duke
-              University. Currently, I&apos;m a Software Engineer Intern at{" "}
+              University. I was previously a Software Engineer Intern at{" "}
               <a
                 href="https://www.redhat.com"
                 target="_blank"
@@ -36,9 +36,8 @@ export default function Home() {
               >
                 Red Hat
               </a>
-              , working on CI/CD and release engineering infrastructure
-              for OpenShift. Feel free to reach out if you&apos;d like to
-              chat!
+              , where I worked on platform engineering for OpenShift.
+              Feel free to reach out if you&apos;d like to chat!
             </p>
           </FadeIn>
 

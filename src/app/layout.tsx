@@ -34,7 +34,7 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <footer className="max-w-3xl mx-auto px-6 py-6 flex items-center justify-between text-xs text-muted border-t border-border w-full">
             <span>&copy; 2026 Arnav Meduri</span>
-            <span>last updated July 28, 2026</span>
+            <span>last updated September 16, 2026</span>
           </footer>
         </ThemeProvider>
       </body>
