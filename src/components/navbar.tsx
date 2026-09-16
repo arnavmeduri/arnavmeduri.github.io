@@ -21,16 +21,6 @@ export function Navbar() {
 
         <div className="flex items-center gap-1">
           <Link
-            href="/education"
-            className={`text-sm px-3 py-1.5 rounded-md transition-colors ${
-              pathname.startsWith("/education")
-                ? "text-accent"
-                : "text-muted hover:text-foreground"
-            }`}
-          >
-            Education
-          </Link>
-          <Link
             href="/work"
             className={`text-sm px-3 py-1.5 rounded-md transition-colors ${
               pathname.startsWith("/work")
