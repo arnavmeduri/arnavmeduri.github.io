@@ -45,13 +45,12 @@ const experiences = [
 const skills = {
   Languages: [
     "Python",
+    "Java",
     "Go",
     "JavaScript/TypeScript",
-    "Java",
     "C/C++",
     "SQL (PostgreSQL, MySQL)",
     "R",
-    "Assembly",
   ],
   "Frameworks/Technologies": [
     "React/Next.js",
@@ -59,17 +58,20 @@ const skills = {
     "Angular",
     "PyTorch",
     "AWS",
-    "Docker/Podman",
+    "Docker",
     "Kubernetes",
     "Linux",
+    "GitHub",
+    "Model Context Protocol",
   ],
   Skills: [
     "Object-Oriented Programming",
-    "RESTful APIs",
-    "AI/ML",
     "Full Stack Development",
-    "Unit Testing",
-    "Agile/Scrum",
+    "RESTful API Design",
+    "Artificial Intelligence / Machine Learning",
+    "Test Automation",
+    "Continuous Integration / Continuous Deployment",
+    "Agile/Scrum Methodologies",
   ],
 };
 
