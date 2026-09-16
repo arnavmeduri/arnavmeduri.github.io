@@ -5,9 +5,9 @@ const experiences = [
     role: "Software Engineer Intern",
     company: "Red Hat",
     location: "Raleigh, NC",
-    period: "May 2026 — Present",
+    period: "May 2026 — Aug 2026",
     description:
-      "Working on CI/CD and release engineering infrastructure, as well as platform observability for OpenShift.",
+      "Contributed to platform engineering for OpenShift Container Platform (OCP), building CI/CD pipelines and observability tooling to support release workflows.",
   },
   {
     role: "Software Engineer Intern",
