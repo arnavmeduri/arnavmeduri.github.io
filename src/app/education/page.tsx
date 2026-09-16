@@ -39,26 +39,11 @@ export default function Education() {
             <p className="text-sm text-muted mt-2 leading-relaxed">
               Concentration: Artificial Intelligence &amp; Machine Learning
             </p>
-          </div>
-        </FadeIn>
-
-        <FadeIn delay={0.08}>
-          <div className="mt-16 pt-10 border-t border-border">
-            <h2 className="text-sm font-semibold uppercase tracking-wider text-accent mb-6">
-              Relevant Coursework
-            </h2>
-            <p className="text-sm text-muted leading-relaxed">
-              {coursework.join(", ")}
+            <p className="text-sm text-muted mt-2 leading-relaxed">
+              Relevant Coursework: {coursework.join(", ")}
             </p>
-          </div>
-        </FadeIn>
-
-        <FadeIn delay={0.16}>
-          <div className="mt-16 pt-10 border-t border-border">
-            <h2 className="text-sm font-semibold uppercase tracking-wider text-accent mb-6">
-              Activities and Societies
-            </h2>
-            <p className="text-sm text-muted leading-relaxed">
+            <p className="text-sm text-muted mt-2 leading-relaxed">
+              Activities and Societies:{" "}
               {activities.map((activity, i) => (
                 <span key={i}>
                   {activity.org} ({activity.role})
