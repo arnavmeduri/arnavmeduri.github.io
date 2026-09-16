@@ -62,7 +62,6 @@ const skills = {
     "Kubernetes",
     "Linux",
     "GitHub",
-    "Model Context Protocol",
   ],
   Skills: [
     "Object-Oriented Programming",
