@@ -31,6 +31,16 @@ export function Navbar() {
             Work
           </Link>
           <Link
+            href="/education"
+            className={`text-sm px-3 py-1.5 rounded-md transition-colors ${
+              pathname.startsWith("/education")
+                ? "text-accent"
+                : "text-muted hover:text-foreground"
+            }`}
+          >
+            Education
+          </Link>
+          <Link
             href="/projects"
             className={`text-sm px-3 py-1.5 rounded-md transition-colors ${
               pathname.startsWith("/projects")
