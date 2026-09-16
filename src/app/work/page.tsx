@@ -7,7 +7,7 @@ const experiences = [
     location: "Raleigh, NC",
     period: "May 2026 — Aug 2026",
     description:
-      "Contributed to platform engineering for OpenShift Container Platform (OCP), building CI/CD and developer tooling to support release workflows.",
+      "Contributed to CI/CD and release engineering for OpenShift, building observability and automation tooling to support release infrastructure.",
   },
   {
     role: "Software Engineer Intern",
